@@ -12,9 +12,12 @@
 		86040AC01E8C52DF00FAA4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86040ABE1E8C52DF00FAA4A6 /* Main.storyboard */; };
 		86040AC21E8C52DF00FAA4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86040AC11E8C52DF00FAA4A6 /* Assets.xcassets */; };
 		86040AC51E8C52DF00FAA4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86040AC31E8C52DF00FAA4A6 /* LaunchScreen.storyboard */; };
+		AE3087446BE7E100501E4873 /* Pods_Novoda_Issues.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34238534BD8E4ABEF95E6EDF /* Pods_Novoda_Issues.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34238534BD8E4ABEF95E6EDF /* Pods_Novoda_Issues.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Novoda_Issues.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F260628C13952897A5388E2 /* Pods-Novoda Issues.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novoda Issues.release.xcconfig"; path = "Pods/Target Support Files/Pods-Novoda Issues/Pods-Novoda Issues.release.xcconfig"; sourceTree = "<group>"; };
 		86040AB71E8C52DF00FAA4A6 /* Novoda Issues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Novoda Issues.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86040ABA1E8C52DF00FAA4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86040ABC1E8C52DF00FAA4A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		86040AC11E8C52DF00FAA4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86040AC41E8C52DF00FAA4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86040AC61E8C52DF00FAA4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C589958DE4CFBF24FBBF3A93 /* Pods-Novoda Issues.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novoda Issues.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Novoda Issues/Pods-Novoda Issues.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3087446BE7E100501E4873 /* Pods_Novoda_Issues.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		828D2F2A50856E150A543095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34238534BD8E4ABEF95E6EDF /* Pods_Novoda_Issues.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		86040AAE1E8C52DF00FAA4A6 = {
 			isa = PBXGroup;
 			children = (
 				86040AB91E8C52DF00FAA4A6 /* Novoda Issues */,
 				86040AB81E8C52DF00FAA4A6 /* Products */,
+				8E752EBB422BA41205192958 /* Pods */,
+				828D2F2A50856E150A543095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Novoda Issues";
 			sourceTree = "<group>";
 		};
+		8E752EBB422BA41205192958 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C589958DE4CFBF24FBBF3A93 /* Pods-Novoda Issues.debug.xcconfig */,
+				4F260628C13952897A5388E2 /* Pods-Novoda Issues.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86040AC91E8C52DF00FAA4A6 /* Build configuration list for PBXNativeTarget "Novoda Issues" */;
 			buildPhases = (
+				F59B62353E77CB01A4A4DA5B /* [CP] Check Pods Manifest.lock */,
 				86040AB31E8C52DF00FAA4A6 /* Sources */,
 				86040AB41E8C52DF00FAA4A6 /* Frameworks */,
 				86040AB51E8C52DF00FAA4A6 /* Resources */,
+				BCC3F84542B07E78D6EADDED /* [CP] Embed Pods Frameworks */,
+				A9078ACFFDBDEF2BC3E797DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9078ACFFDBDEF2BC3E797DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Novoda Issues/Pods-Novoda Issues-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC3F84542B07E78D6EADDED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Novoda Issues/Pods-Novoda Issues-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F59B62353E77CB01A4A4DA5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86040AB31E8C52DF00FAA4A6 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		86040ACA1E8C52DF00FAA4A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C589958DE4CFBF24FBBF3A93 /* Pods-Novoda Issues.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Novoda Issues/Info.plist";
@@ -270,6 +346,7 @@
 		};
 		86040ACB1E8C52DF00FAA4A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F260628C13952897A5388E2 /* Pods-Novoda Issues.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Novoda Issues/Info.plist";
