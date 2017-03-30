@@ -11,6 +11,7 @@
 		86040ABD1E8C52DF00FAA4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86040ABC1E8C52DF00FAA4A6 /* ViewController.swift */; };
 		86040AC21E8C52DF00FAA4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86040AC11E8C52DF00FAA4A6 /* Assets.xcassets */; };
 		86040AC51E8C52DF00FAA4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86040AC31E8C52DF00FAA4A6 /* LaunchScreen.storyboard */; };
+		86D0C2AE1E8CEB9100A1F807 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D0C2AD1E8CEB9100A1F807 /* UIView+Constraints.swift */; };
 		AE3087446BE7E100501E4873 /* Pods_Novoda_Issues.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34238534BD8E4ABEF95E6EDF /* Pods_Novoda_Issues.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		86040AC11E8C52DF00FAA4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86040AC41E8C52DF00FAA4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86040AC61E8C52DF00FAA4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86D0C2AD1E8CEB9100A1F807 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		C589958DE4CFBF24FBBF3A93 /* Pods-Novoda Issues.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novoda Issues.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Novoda Issues/Pods-Novoda Issues.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				86040ABA1E8C52DF00FAA4A6 /* AppDelegate.swift */,
+				86D0C2AD1E8CEB9100A1F807 /* UIView+Constraints.swift */,
 				86040ABC1E8C52DF00FAA4A6 /* ViewController.swift */,
 				86040AC11E8C52DF00FAA4A6 /* Assets.xcassets */,
 				86040AC31E8C52DF00FAA4A6 /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D0C2AE1E8CEB9100A1F807 /* UIView+Constraints.swift in Sources */,
 				86040ABD1E8C52DF00FAA4A6 /* ViewController.swift in Sources */,
 				86040ABB1E8C52DF00FAA4A6 /* AppDelegate.swift in Sources */,
 			);
